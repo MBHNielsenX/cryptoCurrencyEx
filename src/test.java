@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class converter {
+public class test {
     public static void main(String[] args) {
 
         //Makes a random generator
@@ -13,6 +13,51 @@ public class converter {
         //Prints the following question
         System.out.println("What is your firstname?");
         String firstname = scanner.nextLine();
+
+        //A "while" function to check if there were numbers in the name (didnt work)//
+        /*
+        System.out.println("NOTE: If you want to restart type the word exit and press enter\n");
+        String firstnameInput = "";
+        String exit = "exit";
+        boolean nonWordString = true; //if there is a number or figure in the string
+
+        while(true){
+            firstnameInput = scanner.nextLine();
+
+            //This will check if there are any digits in the string
+            nonWordString = firstnameInput.charAt((int)Math.floor())");
+
+            if(nonWordString == false)
+            {
+                System.out.println("You have entered a number in your name");
+                System.out.println("Remove all numbers from your name and try again");
+                continue;
+            }else{
+                System.out.println("youve won");
+            }
+        }
+
+         */
+
+        //Scans for the following text that preferably would be a firstname
+        /*
+
+        do {
+            if (!firstname.matches("[0-9]+]")) {
+                okay = false;
+                String error = scanner.next();
+                System.err.println(error + " is an invalid name");
+
+            } else {
+                okay = true;
+
+
+            }
+        }while (!okay);
+        System.out.println("you win");
+
+         */
+
 
 
         //Prints the following question
@@ -30,6 +75,15 @@ public class converter {
         //Takes the string "randomChar" and converts the data imported from "fullName" to a random number that then gets converted back to a char
         randomChar += fullName.charAt((int)Math.floor(Math.random() * fullName.length()));
 
+        //An attempt to make a random word generator (didnt work)//
+        /*
+        //Random word generator that didnt work (it ended up printing out "sainNlsNMss"
+        int randomPositionOfLetter;
+        for (int i=1;i<=fullName.length();i++) {
+            randomPositionOfLetter = random.nextInt(fullName.length());
+           noSpace = noSpace + fullName.charAt(randomPositionOfLetter);
+        }
+         */
 
         //Prints the following
         System.out.println("Welcome dear " + firstname + " " + surname + " ❤");
@@ -84,14 +138,6 @@ public class converter {
         System.out.printf("\n- " + "%.5f", cardano);
         System.out.printf("\n- " + "%.5f", binanceCoin);
         System.out.println("\n" + " In total that is " + (bitCoin + ethereum + cardano + binanceCoin) + " coins and " + ((bitCoin + ethereum + cardano + binanceCoin)/4) + average);
-
-
-
-
-
-
-
-
 
 
 
